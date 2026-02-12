@@ -1,3 +1,5 @@
+// App.js
+
 import { ReactFlowProvider } from 'reactflow'; // 1. Add this import
 import { PipelineToolbar } from './toolbar';
 import { PipelineUI } from './ui';

@@ -1,14 +1,11 @@
-import { Position } from 'reactflow';
 import BaseNode from './baseNode';
 
-export const NoteNode = ({ id, data }) => {
-  return (
-    <BaseNode 
-      id={id} 
-      label="Sticky Note" 
-      handles={[{ type: 'source', position: Position.Right, id: 'output' }]}
-    >
-      <textarea placeholder="Write a note..." className="nodrag" />
-    </BaseNode>
-  );
-};
+export const NoteNode = ({ id }) => (
+  <BaseNode id={id} label="Sticky Note" handles={[]}>
+    <textarea 
+      placeholder="Documentation..." 
+      className="nodrag text-input" 
+      style={{ background: '#fef9c3', border: 'none', height: '80px' }} 
+    />
+  </BaseNode>
+);

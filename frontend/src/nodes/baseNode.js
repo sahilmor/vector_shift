@@ -18,9 +18,10 @@ const BaseNode = ({ id, label, children, handles = [] }) => {
           position={handle.position}
           id={`${id}-${handle.id}`}
           style={{ 
-            background: '#555', 
-            width: '8px', 
-            height: '8px',
+            background: '#8b5cf6', 
+            width: '10px', 
+            height: '10px',
+            border: '2px solid #fff',
             ...handle.style 
           }}
         />

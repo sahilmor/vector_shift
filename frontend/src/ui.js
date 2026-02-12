@@ -10,6 +10,13 @@ import { InputNode } from './nodes/inputNode';
 import { LLMNode } from './nodes/llmNode';
 import { OutputNode } from './nodes/outputNode';
 import { TextNode } from './nodes/textNode';
+import { NoteNode } from './nodes/noteNode';
+import { FilterNode } from './nodes/filterNode';
+import { FileNode } from './nodes/fileNode';
+import { IntegrationNode } from './nodes/integrationNode';
+import { LogicNode } from './nodes/logicNode';
+import { DatabaseNode } from './nodes/databaseNode';
+import { TransformNode } from './nodes/transformNode';
 
 import 'reactflow/dist/style.css';
 
@@ -20,6 +27,13 @@ const nodeTypes = {
   llm: LLMNode,
   customOutput: OutputNode,
   text: TextNode,
+  note: NoteNode,
+  filter: FilterNode,
+  file: FileNode,
+  slack: IntegrationNode,
+  logic: LogicNode,
+  database: DatabaseNode,
+  transform: TransformNode,
 };
 
 const selector = (state) => ({
