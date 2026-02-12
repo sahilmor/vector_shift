@@ -1,0 +1,20 @@
+.submit-button {
+  background-color: #7c3aed; /* Brand Purple */
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+  background-color: #6d28d9;
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+
